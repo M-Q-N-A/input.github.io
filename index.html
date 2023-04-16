@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="user1">
+<br>
+<br>
+<br>
+<br>
+<input type="text" id="user2">
+<br>
+<h1 id="rslt">Result</h1>
+<br>
+<br>
+<button onclick="add()">Add</button>
+<button onclick="sub()">Sub</button>
+<button onclick="mult()">Multiply</button>
+<button onclick="divide()">Divide</button>
+<br>
+<br>
+<script>
+    function add(){
+  A = document.getElementById("user1").value;
+  D = document.getElementById("user2").value;
+  cnvrt=parseInt(A)
+  cnvt=parseInt(D)
+  C = cnvrt+cnvt
+  document.getElementById("rslt").innerText = C;
+ }
+ function sub(){
+  A = document.getElementById("user1").value;
+  D = document.getElementById("user2").value;
+  C = A-D
+  document.getElementById("rslt").innerText = C;
+ }
+ function mult(){
+  A = document.getElementById("user1").value;
+  D = document.getElementById("user2").value;
+  C = A*D
+  document.getElementById("rslt").innerText = C;
+ }
+ function divide(){
+  A = document.getElementById("user1").value;
+  D = document.getElementById("user2").value;
+  C = A/D
+  document.getElementById("rslt").innerText = C;
+ }
+</script>
+</body>
+</html>
